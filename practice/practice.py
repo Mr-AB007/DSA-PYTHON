@@ -22,7 +22,7 @@ def main():
     # print(s[::-2])  # fdb
     # print("abcdefg"[::-3])  # gdb
     # print("OpenAI"[::-1])   # IAnepO
-    # print("SlicingPython"[1::2]) # lcnPto
+     print("SlicingPython"[1::2]) # lcnPto
 
 if __name__ == "__main__":
     main()
