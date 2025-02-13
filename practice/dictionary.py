@@ -68,6 +68,8 @@ def main1():
 
     print(person)
 
+if __name__ == "__main__":
+    main1()
 
 """
 ✅ Use .get() to avoid KeyError
@@ -78,5 +80,16 @@ def main1():
 """
 
 
-if __name__ == "__main__":
-    main1()
+# Tricky Dictionary Questions 
+d = {}
+d[1] = "One"
+d[True] = "True"
+d[1.0] = "Float"
+
+print(d) #1,True,1.0 in python are same so output-> 1 : Float , means keys are same so only value is updated
+
+d = {"a": 1, "b": 2}
+d["c"] = d.get("c", 0) + 1
+
+print(d) # d.get("c", 0) returns 0 since "c" does not exist, then +1 is added.
+
