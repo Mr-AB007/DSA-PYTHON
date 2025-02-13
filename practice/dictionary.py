@@ -55,12 +55,18 @@ def main1():
 # defaultdict() automatically provides a default value for missing keys instead of raising a KeyError
     from collections import defaultdict
 
-    dd = defaultdict(int)
-    dd["a"] += 1
-    print(dd)  # defaultdict(<class 'int'>, {'a': 1}) even there was value for a before it return 0 + 1 = 1
+    # dd = defaultdict(int)
+    # dd["a"] += 1
+    # print(dd)  # defaultdict(<class 'int'>, {'a': 1}) even there was value for a before it return 0 + 1 = 1
 
-    dd = defaultdict(int)  # Default value is `int()`, which is 0
-    print(dd["a"])  # ✅ No KeyError, returns 0
+    # dd = defaultdict(int)  # Default value is `int()`, which is 0
+    # print(dd["a"])  # ✅ No KeyError, returns 0
+
+    person = {"name": "Anubhav"}
+    person.setdefault("hobbies", []).append("Coding")  # Adds a list and appends "Coding"
+    person.setdefault("hobbies", []).append("Gaming")  # Appends "Gaming"
+
+    print(person)
 
 
 """
