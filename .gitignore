@@ -1,0 +1,9 @@
+# Ignore IntelliJ files
+.idea/
+*.iml
+
+# Ignore compiled and build files
+target/
+out/
+build/
+*.class
