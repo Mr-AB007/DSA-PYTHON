@@ -1,4 +1,4 @@
-
+#Remove duplicate elemnts from sorted array( use in-place approach)
 def remove_duplicates(lst: list) -> int:
     if not lst:
         return 0  # Return 0 for an empty list
