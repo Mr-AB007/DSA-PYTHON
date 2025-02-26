@@ -24,6 +24,7 @@ class Solution:
             print(f"{current.val} -> ",end="")
             current = current.next
         print("null")
+
 def main():
     linked_list = ListNode(1,ListNode(1,ListNode(2,ListNode(2))))
     solution = Solution()
