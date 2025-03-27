@@ -21,3 +21,6 @@ if __name__ == "__main__":
     print("Original:", s)
     reverse_string(s)
     print("Reversed:", s)
+
+    #one line answer
+    print("Again Reversed:",s[::-1])
