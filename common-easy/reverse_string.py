@@ -20,7 +20,7 @@ if __name__ == "__main__":
     s = ['h', 'e', 'l', 'l', 'o']
     print("Original:", s)
     reverse_string(s)
-    print("Reversed:", s)
+    print("Reversed:", s)   #space: O(1)
 
     #one line answer
-    print("Again Reversed:",s[::-1])
+    print("Again Reversed:",s[::-1]) #not efficient, space: O(n) (Allocates new memory for the reversed list)
